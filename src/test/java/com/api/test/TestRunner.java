@@ -13,13 +13,13 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 				//"html:target/cucumber/report",
 				"json:target/cucumber/cucumber.json",
 				"com.api.utils.MyTestListener"
-		}
-		,features= {"src/test/resources/features"}
+		},
+		features= {"src/test/resources/features/PostBooking.feature"}
 		,glue = {"com.api.stepdefinition"}
 		//,dryRun = true
 		,monochrome = true
 		,snippets = SnippetType.CAMELCASE
-		,tags = "@bookerAPI"
+//		,tags = "@bookerAPI"
 		//,publish = true
 		)
 public class TestRunner {
